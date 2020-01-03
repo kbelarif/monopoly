@@ -1,4 +1,4 @@
-package fr.gtm.monopoly.Test;
+package fr.gtm.monopolyTest;
 
 import static org.junit.Assert.*;
 
