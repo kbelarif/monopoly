@@ -1,10 +1,13 @@
 package fr.gtm.monopoly;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Joueur {
 	private String nom;
 	private Pion pion;
 	private int solde;
-	
+	private List<Propriete> proprietes = new ArrayList<Propriete>();
 	public Pion getPion() {
 		return pion;
 	}
