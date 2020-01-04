@@ -7,6 +7,18 @@ public class Joueur {
 	private String nom;
 	private Pion pion;
 	private int solde;
+	public List<Propriete> getProprietes() {
+		return proprietes;
+	}
+
+	public void setProprietes(List<Propriete> proprietes) {
+		this.proprietes = proprietes;
+	}
+
+	public void setSolde(int solde) {
+		this.solde = solde;
+	}
+
 	private List<Propriete> proprietes = new ArrayList<Propriete>();
 	public Pion getPion() {
 		return pion;
