@@ -5,6 +5,7 @@ public class Pion {
 	private Joueur joueur;
 	private Case  position;
 	
+	
 	public Pion(String nom) {
 		this.nom = nom;
 	}
@@ -30,10 +31,12 @@ public class Pion {
 	public void avancer(int r) {
 	for (int i = 0; i<r-1; i++) {
 		position.survoler(this);
-		System.out.println("Le Pion "+this.nom+" survole la "+this.getPosition().getNom());
+		this.setPosition(this.getPosition().getSuivante());
+		//System.out.println("Le Pion "+this.nom+" survole la "+this.getPosition().getNom());
 	}
 	position.arreter(this);
-	System.out.println("Le Pion "+this.getNom()+" s'arrête à la "+this.getPosition().getNom());
+	this.setPosition(this.getPosition().getSuivante());
+	//System.out.println("Le Pion "+this.getNom()+" s'arrête à la "+this.getPosition().getNom());
 }
 
 }

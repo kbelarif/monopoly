@@ -21,12 +21,12 @@ public class Case {
 		this.suivante = suivante;
 	}
 	public void survoler(Pion p) {
-		p.setPosition(p.getPosition().getSuivante());
+		//p.setPosition(p.getPosition().getSuivante());
 		
 	}
 	
 	public void arreter(Pion p) {
-		p.setPosition(p.getPosition().getSuivante());
+		//p.setPosition(p.getPosition().getSuivante());
 	}
 	
 }

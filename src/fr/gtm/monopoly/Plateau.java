@@ -10,7 +10,8 @@ public class Plateau {
 		}
 
 		private void creerCases() {
-			for(int i=0; i<cases.length;i++) {
+			cases[0] = new Depart();
+			for(int i=1; i<cases.length;i++) {
 				cases[i] = new Case("case "+i);
 			}
 			
