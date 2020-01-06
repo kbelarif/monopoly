@@ -10,9 +10,15 @@ public class Plateau {
 		}
 
 		private void creerCases() {
-			cases[0] = new Depart();
+			
 			for(int i=1; i<cases.length;i++) {
-				cases[i] = new Case("case "+i);
+				switch(i) {
+				case 0: cases[i] = new Depart(); break;
+				case 3: cases[i] = new Impot(); break;
+				case 37: cases[i] = new TaxedeLuxe(); break;
+				default: cases[i] = new Case("case "+i); break;
+				}
+				
 			}
 			
 		}
