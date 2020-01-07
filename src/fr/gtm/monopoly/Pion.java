@@ -36,7 +36,8 @@ public class Pion {
 	}
 	position.arreter(this);
 	this.setPosition(this.getPosition().getSuivante());
-	//System.out.println("Le Pion "+this.getNom()+" s'arrête à la "+this.getPosition().getNom());
+	System.out.println("Le Pion "+this.getNom()+" s'arrête à la "+this.getPosition().getNom());
+	System.out.println("solde: "+this.getJoueur().getSolde());
 }
 
 }

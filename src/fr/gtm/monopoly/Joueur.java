@@ -7,9 +7,13 @@ public class Joueur {
 	
 	private String nom;
 	private Pion pion;
-	private int solde;
+	private int solde=10;
 	public List<Propriete> proprietes= new ArrayList<Propriete>();
 	
+	public List<Propriete> getProprietes() {
+		return proprietes;
+	}
+
 	public void addProprietes(Propriete propriete) {
 		this.proprietes.add(propriete);
 	}
@@ -38,7 +42,7 @@ public class Joueur {
 		super();
 		this.nom = nom;
 		this.pion = pion;
-	}
+	}// TODO Auto-generated method stub
 	
 	public Joueur(String nom, Pion pion, int solde) {
 		super();
