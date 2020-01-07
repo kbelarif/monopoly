@@ -2,7 +2,11 @@ package fr.gtm.monopoly;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * 
+ * @author adminl
+ *
+ */
 public class Joueur {
 	
 	private String nom;

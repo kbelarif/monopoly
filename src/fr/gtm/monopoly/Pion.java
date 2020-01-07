@@ -27,7 +27,12 @@ public class Pion {
 	public void setJoueur(Joueur joueur) {
 		this.joueur = joueur;
 	}
-
+	/**
+	 * prend un entier r et fait avancer le pion courant de r cases.
+	 * @param r
+	 * 
+	 * 
+	 */
 	public void avancer(int r) {
 	for (int i = 0; i<r-1; i++) {
 		position.survoler(this);
