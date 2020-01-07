@@ -4,27 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Joueur {
+	
 	private String nom;
 	private Pion pion;
 	private int solde;
-	public List<Propriete> getProprietes() {
-		return proprietes;
-	}
-
-	public void setProprietes(List<Propriete> proprietes) {
-		this.proprietes = proprietes;
+	public List<Propriete> proprietes= new ArrayList<Propriete>();
+	
+	public void addProprietes(Propriete propriete) {
+		this.proprietes.add(propriete);
 	}
 
 	public void setSolde(int solde) {
 		this.solde = solde;
 	}
 
-	private List<Propriete> proprietes = new ArrayList<Propriete>();
-	public Pion getPion() {
-		return pion;
-	}
-
-	public int getSolde() {
+		public int getSolde() {
 		return solde;
 	}
 
@@ -57,6 +51,10 @@ public class Joueur {
 		this.pion =p1;
 		
 	}
+	
+		public Pion getPion() {
+		return pion;
+	}
 
 	public void jouer(Gobelet gobelet) {
 		gobelet.lancer();
@@ -64,6 +62,7 @@ public class Joueur {
 		System.out.println(r+". ");
 		pion.avancer(r);
 	}
+
 	
 
 }

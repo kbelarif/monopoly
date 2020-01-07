@@ -1,10 +1,11 @@
 package fr.gtm.monopoly;
 
 public class Terrain extends Propriete{
-
+	
 	public Terrain(String nom) {
 		super(nom);
-		// TODO Auto-generated constructor stub
+		this.setPrixAchat(100);
+		this.setLoyer(10);
 	}
 
 }
